@@ -1,12 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
     <title>Писатели Беларуси - портал от команды RSSchool #8</title>
-    <meta name="description" content="Информационный портал о писателях Беларуси. Разработка команды RSSchool #8" />
-    <link href="css/style.css" rel="stylesheet">
+    <meta
+      name="description"
+      content="Информационный портал о писателях Беларуси. Разработка команды RSSchool #8"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/list-writers.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -16,7 +28,12 @@
           <a class="nav-link" href="#">Список писателей</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
             Русский
           </a>
           <div class="dropdown-menu">
@@ -28,16 +45,125 @@
     </nav>
 
     <main role="main" class="container">
+      <section class="list-writers">
+        <form class="field-serch">
+          <input
+            class="place_for_search"
+            type="text"
+            id="text-to-find"
+            value=""
+            placeholder="Search"
+            autofocus
+          />
+          <input
+            class="button_for_turn_back"
+            type="button"
+            onclick="javascript: FindOnPage('text-to-find',false); return false;"
+            value="Стереть "
+            title="Отменить поиск"
+          />
+          <input
+            class="button_for_search"
+            type="submit"
+            onclick="javascript: FindOnPage('text-to-find',true); return false;"
+            value="Поиск "
+            title="Начать поиск"
+          />
+        </form>
+
+        <div class="content">
+          <div class="writer">
+            <div class="left-part">
+              <a href="#"><img src="img/photo/Aliksevich.jpg" alt="photo"/></a>
+            </div>
+
+            <div class="right-part">
+              <a href="#"
+                ><span class="name">Светлана Александровна Алексиевич</span></a
+              >
+              <span class="date-of-birth">31 мая 1948</span>
+              <span class="location">Станислав, Россия</span>
+            </div>
+          </div>
+          <div class="writer">
+            <div class="left-part">
+              <a href="#"><img src="img/photo/Arlou.jpg" alt="photo"/></a>
+            </div>
+
+            <div class="right-part">
+              <a href="#"
+                ><span class="name">Орлов Владимир Алексеевич</span></a
+              >
+              <span class="date-of-birth">25 августа 1953</span>
+              <span class="location">Полоцк, Беларусь</span>
+            </div>
+          </div>
+          <div class="writer">
+            <div class="left-part">
+              <a href="#"><img src="img/photo/Bykov.jpg" alt="photo"/></a>
+            </div>
+
+            <div class="right-part">
+              <a href="#"
+                ><span class="name">Быков Василь Владимирович</span></a
+              >
+              <span class="date-of-birth">19 июня 1924</span>
+              <span class="location"
+                >деревня Бычки Витебская обл., Беларусь</span
+              >
+            </div>
+          </div>
+          <div class="writer">
+            <div class="left-part">
+              <a href="#"><img src="img/photo/Korotkevich.jpg" alt="photo"/></a>
+            </div>
+
+            <div class="right-part">
+              <a href="#"
+                ><span class="name">Короткевич Владимир Семёнович</span></a
+              >
+              <span class="date-of-birth">26 ноября 1930</span>
+              <span class="location">Минск, Беларусь</span>
+            </div>
+          </div>
+          <div class="writer">
+            <div class="left-part">
+              <a href="#"><img src="img/photo/Shamyakin.jpg" alt="photo"/></a>
+            </div>
+
+            <div class="right-part">
+              <a href="#"><span class="name">Шамякин Иван Петрович</span></a>
+              <span class="date-of-birth">30 января 1921</span>
+              <span class="location">Минск, Беларусь</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div class="starter-template">
         <h1>Добро пожаловать на портал о белорусских писателях!</h1>
-        <p class="lead">Мы собрали и структурировали информацию в удобном виде,<br>так, что вам будет легко найти все необходимое!</p>
+        <p class="lead">
+          Мы собрали и структурировали информацию в удобном виде,<br />так, что
+          вам будет легко найти все необходимое!
+        </p>
       </div>
-
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/serch.js"></script>
   </body>
 </html>

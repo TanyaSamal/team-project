@@ -1,0 +1,89 @@
+.list-writers {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-serch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #827aaf;
+}
+/**
+serch form
+*/
+input {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+  color: rgb(160, 162, 165);
+  border: 2px solid #343a3f;
+}
+input[type="text"] {
+  display: flex;
+  width: 400px;
+  padding: 10px;
+  font-size: 19px;
+  outline: none;
+  background-image: url(../img/icon/icon-input.gif);
+  background-repeat: no-repeat;
+  background-position: 6px;
+  padding-left: 30px;
+}
+input[type="button"] {
+  display: flex;
+  width: 100px;
+}
+input[type="submit"] {
+  display: flex;
+  width: 100px;
+}
+/**
+serch form end
+*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #a4ebdb;
+  align-items: center;
+}
+.writer {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 2px solid #ffffff;
+  width: 1000px;
+}
+.left-part {
+  margin-left: 30px;
+}
+.left-part img {
+  height: 200px;
+}
+.right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 80px;
+}
+.right-part a {
+  text-decoration: none;
+}
+.right-part a :hover {
+  text-decoration: underline;
+  color: rgb(129, 74, 233);
+}
+.right-part a span {
+  color: rgb(46, 46, 46);
+  font-weight: 400;
+  font-size: 21px;
+}
+.right-part .location,
+.date-of-birth {
+  color: rgb(46, 46, 46);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+}
