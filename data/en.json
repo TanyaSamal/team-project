@@ -1,0 +1,26 @@
+{
+  "values": {
+    "sitename": "Writers of Belarus",
+    "listLink": "Writers list",
+    "currantLang": "English",
+    "lang1": "Беларускi",
+    "lang2": "Русский",
+    "h1": "Welcome to the portal about Belarusian writers!",
+    "lead": "We collected and structured information in a convenient form.,<br>so that it will be easy for you to find everything you need!",
+    "about": "About the portal",
+    "aboutText": "On the site you will find Belarusian writers with their biographies, painted by year in a convenient visual format, a list of the most famous works and the year of their writing, public photos, their video performances or documentaries, as well as the places of their vital and creative activities.",
+    "author": "Author of the day",
+    "authorLink": "More...",
+    "team": "The project team",
+    "p1": "Samal Tatsiana",
+    "p1Work": "Organization / home page",
+    "p2": "Nastya Kharuk",
+    "p2Work": "Author page",
+    "p3": "Aliaksandr Pauliukavets",
+    "p3Work": "Author page",
+    "p4": "Vasiliy Repin",
+    "p4Work": "Data for the portal",
+    "p5": "Igor Baranov",
+    "p5Work": "Writers List / Search"
+  }
+}
