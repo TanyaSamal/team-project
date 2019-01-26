@@ -1,0 +1,24 @@
+{
+  "name": "team-project",
+  "version": "1.0.0",
+  "description": "cultural portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanyaSamal/team-project.git"
+  },
+  "author": "Team 8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanyaSamal/team-project/issues"
+  },
+  "homepage": "https://github.com/TanyaSamal/team-project#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0"
+  }
+}
