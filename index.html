@@ -19,6 +19,7 @@
     />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/list-writers.css" />
+    <link rel="stylesheet" href="css/media screen.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -52,21 +53,21 @@
             type="text"
             id="text-to-find"
             value=""
-            placeholder="Search"
+            placeholder="Введите имя, город"
             autofocus
           />
           <input
             class="button_for_turn_back"
             type="button"
             onclick="javascript: FindOnPage('text-to-find',false); return false;"
-            value="Стереть "
+            value="Очистить"
             title="Отменить поиск"
           />
           <input
             class="button_for_search"
             type="submit"
             onclick="javascript: FindOnPage('text-to-find',true); return false;"
-            value="Поиск "
+            value="Искать"
             title="Начать поиск"
           />
         </form>

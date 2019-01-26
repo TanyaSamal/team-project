@@ -1,0 +1,34 @@
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 999px) {
+}
+
+@media screen and (max-width: 760px) {
+  .left-part {
+    margin: 0;
+  }
+  .right-part {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: stretch; */
+    /* align-items: center; */
+    /* margin-left: 80px; */
+    margin: 0 auto;
+  }
+  .list-writers .content .writer {
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .left-part img {
+    height: 300px;
+  }
+  /* .list-writers .content .writer {
+    display: block;
+  } */
+}
