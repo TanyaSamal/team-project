@@ -117,6 +117,7 @@ footer {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
 }
 
 .daily-author img {
@@ -125,4 +126,16 @@ footer {
 
 .photo {
   height: 350px;
+}
+
+.result {
+  display: flex;
+  padding: 10px 0;
+}
+
+.control {
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+  justify-content: center;
 }
