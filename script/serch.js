@@ -1,35 +1,35 @@
 const ready = () => {
   const printAuthor = (obj, key1, action1) => {
-    const mainEl = document.querySelector(".daily-author");
+    const mainEl = document.querySelector('.daily-author');
 
-    const res = document.createElement("div");
-    res.className = "result";
+    const res = document.createElement('div');
+    res.className = 'result';
 
-    const leftPart = document.createElement("div");
-    leftPart.className = ".left-part";
+    const leftPart = document.createElement('div');
+    leftPart.className = '.left-part';
     res.appendChild(leftPart);
 
-    const pic = document.createElement("img");
+    const pic = document.createElement('img');
     pic.src = obj.img;
-    pic.classList.add("photo");
+    pic.classList.add('photo');
     leftPart.appendChild(pic);
 
-    const wrapper = document.createElement("div");
-    wrapper.className = "info";
+    const wrapper = document.createElement('div');
+    wrapper.className = 'info';
 
-    const name = document.createElement("h3");
+    const name = document.createElement('h3');
     name.innerHTML = obj.name.ru;
     wrapper.appendChild(name);
 
     if (key1) {
-      const year = document.createElement("p");
+      const year = document.createElement('p');
       year.innerHTML = `${key1} - ${action1}`;
       wrapper.appendChild(year);
     }
 
-    const link = document.createElement("a");
-    link.href = "/";
-    link.innerHTML = "Читать далее...";
+    const link = document.createElement('a');
+    link.href = '/';
+    link.innerHTML = 'Читать далее...';
     wrapper.appendChild(link);
 
     res.appendChild(wrapper);
@@ -37,7 +37,7 @@ const ready = () => {
   };
 
   const loading = () => {
-    fetch("../data/data.json")
+    fetch('../data/data.json')
       .then(response => response.json())
       .then(resultJson => {
         resultJson.forEach(o => {
@@ -49,14 +49,14 @@ const ready = () => {
   loading();
 
   const startSearch = () => {
-    fetch("../data/data.json")
+    fetch('../data/data.json')
       .then(response => response.json())
       .then(resultJson => {
-        const keyWord = document.body.querySelector(".search").value;
-        const mainEl = document.querySelector(".daily-author");
-        mainEl.innerHTML = "";
+        const keyWord = document.body.querySelector('.search').value;
+        const mainEl = document.querySelector('.daily-author');
+        mainEl.innerHTML = '';
         let res = 0;
-        if (keyWord !== "") {
+        if (keyWord !== '') {
           resultJson.forEach(obj => {
             const name = obj.name.ru.toLowerCase();
             if (name.indexOf(keyWord) !== -1) {
@@ -81,13 +81,13 @@ const ready = () => {
           });
         }
         if (res === 0) {
-          mainEl.innerHTML = "Ничего не найдено";
+          mainEl.innerHTML = 'Ничего не найдено';
         }
       });
   };
 
-  const findBtn = document.body.querySelector(".btn-outline-secondary");
-  findBtn.addEventListener("click", startSearch);
+  const findBtn = document.body.querySelector('.btn-outline-secondary');
+  findBtn.addEventListener('click', startSearch);
 };
 
-document.addEventListener("DOMContentLoaded", ready);
+document.addEventListener('DOMContentLoaded', ready);

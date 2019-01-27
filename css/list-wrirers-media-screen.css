@@ -1,9 +1,3 @@
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 999px) {
-}
-
 @media screen and (max-width: 760px) {
   .photo,
   .info {
@@ -19,7 +13,6 @@
     text-align: center;
   }
 }
-
 @media screen and (max-width: 414px) {
   .photo {
     height: 300px;
