@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 999px) {
+}
+
+@media screen and (max-width: 760px) {
+  .photo,
+  .info {
+    margin: 0 auto;
+  }
+  .right-part {
+    margin: 0 auto;
+  }
+  .result {
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .photo {
+    height: 300px;
+  }
+}
