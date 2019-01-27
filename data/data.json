@@ -8,62 +8,698 @@
 		"img": "../img/photo/Shamyakin.jpg",
 		"bio": [
 			{
-			"year": "1921",
-			"descriptionRu": "родился в крестьянской семье",
-			"placeRu": "д.Корма Гомельского уезда"
+			  "year": "1921",
+			  "descriptionRu": "родился в крестьянской семье",
+			  "placeRu": "д.Корма Гомельского уезда",
+        "descriptionEn": "was born in a peasant family",
+        "placeEn": "village Korma, Gomel region",
+        "descriptionBy": "нарадзіўся ў сялянскай сям'і",
+        "placeBy": "вёска Карма Гомельскага павета"
 			},
 			{
-			"year": "1936",
-			"descriptionRu": "начало учебы в Гомельском техникуме строительных материалов",
-			"placeRu": "Гомель"
+			  "year": "1936",
+			  "descriptionRu": "начало учебы в Гомельском техникуме строительных материалов",
+			  "placeRu": "Гомель",
+        "descriptionEn": "was begin study in the Gomel technical school of building materials",
+        "placeEn": "Gomel, Belarus",
+        "descriptionBy": "пачатак вучобы ў Гомельскім тэхнікуме будаўнічых матэрыялаў",
+        "placeBy": "Гомель, Беларусь"
+
 			},
 			{
-			"year": "1940",
-			"descriptionRu": "работа техником-технологом кирпичного завода",
-			"placeRu": "Белосток"
+		  	"year": "1940",
+			  "descriptionRu": "работа техником-технологом кирпичного завода",
+			  "placeRu": "Белосток, Польша",
+        "descriptionEn": "worked as a technician at a brick factory",
+        "placeEn": "Bialystok, Poland",
+        "descriptionBy": "працаваў тэхнікам-тэхнолагам цаглянага завода",
+        "placeBy": "Беласток, Польшча"
 			},
 			{
-			"year": "1940",
-			"descriptionRu": "служба в РККА в зенитно-артиллерийской части",
-			"placeRu": "Мурманск"
+			  "year": "1940",
+			  "descriptionRu": "служба в РККА в зенитно-артиллерийской части",
+			  "placeRu": "Мурманск",
+        "descriptionEn": "service in the Red Army in the anti-aircraft artillery unit",
+        "placeEn": "Murmansk",
+        "descriptionBy": "служба ў РККА ў зенітна-артылерыйскай частцы",
+        "placeBy": "Мурманск"
 			},
 			{
-			"year": "1944",
-			"descriptionRu": "передислоцирован в Польшу",
-			"placeRu": "Польша"
+			  "year": "1944",
+			  "descriptionRu": "передислоцирован в Польшу",
+			  "placeRu": "Польша",
+        "descriptionEn": "was relocated to Poland",
+        "placeEn": "Poland",
+        "descriptionBy": "перадыслакаваны ў Польшчу",
+        "placeBy": "Польшча"
 			},
 			{
-			"year": "1945",
-			"descriptionRu": "демобилизация и работа преподавателем языка и литературы неполной средней школы",
-			"placeRu": "д.Прокоповка Тереховского района"
-			}
+			  "year": "1945",
+			  "descriptionRu": "демобилизация и работа преподавателем языка и литературы неполной средней школы",
+			  "placeRu": "д.Прокоповка Тереховского района",
+        "descriptionEn": "After demobilization he was working as a teacher of language and literature of junior high school",
+        "placeEn": "v.Prokopovka, Terekhovsky district",
+        "descriptionBy": "дэмабілізацыя і праца выкладчыкам мовы і літаратуры няпоўнай сярэдняй школы",
+        "placeBy": "в. Прокоповка, Церахоўскі раён"
+			},
+
+      {
+        "year": "1963",
+        "descriptionRu": "становится Депутатом Верховного Совета БССР",
+        "placeRu": "Беларусь",
+        "descriptionEn": "becomes a deputy of the Supreme Council of the BSSR",
+        "placeEn": "Belarus",
+        "descriptionBy": "становіцца Дэпутатам Вярхоўнага Савета БССР",
+        "placeBy": "Беларусь"
+      },
+
+      {
+        "year": "1980",
+        "descriptionRu": "Депутат Верховного Совета СССР ",
+        "placeRu": "СССР",
+        "descriptionEn": "becomes a deputy of the Supreme Council of the USSR",
+        "placeEn": "USSR",
+        "descriptionBy": "Дэпутат Вярхоўнага Савета СССР",
+        "placeBy": "СССР"
+      },
+
+      {
+        "year": "2004",
+        "descriptionRu": "Скончался 14 октября 2004 года. Похоронен на Восточном кладбище",
+        "placeRu": "Минск, Беларусь",
+        "descriptionEn": "He died on October 14, 2004. Buried at the Eastern Cemetery",
+        "placeEn": "Minsk, Belarus",
+        "descriptionBy": "Памёр 14 кастрычніка 2004 года. Пахаваны на Усходніх могілках",
+        "placeBy": "Минск, Беларусь."
+      }
+
 		],
 		"biblio": [
+
 			{
-			"year": "1949",
-			"workRu": "Глубокое течение",
-			"workBy": "Глыбокая плынь",
-			"workEn": "Deep streams"
+		  	"year": "1949",
+	  		"workRu": "Глубокое течение",
+		  	"workBy": "Глыбокая плынь",
+	  		"workEn": "The Deep stream"
 			},
+
 			{
-			"year": "1953",
-			"workRu": "В добрый час",
-			"workBy": "У добры час",
-			"workEn": "In the Good Times"
+		  	"year": "1953",
+		  	"workRu": "В добрый час",
+		  	"workBy": "У добры час",
+		  	"workEn": "In the Good Times, The"
 			},
+
 			{
-			"year": "1957",
-			"workRu": "Родники",
-			"workBy": "Крыніцы",
-			"workEn": "The Springs"
+		  	"year": "1957",
+		  	"workRu": "Родники",
+		  	"workBy": "Крыніцы",
+		  	"workEn": "The Springs"
 			},
+
 			{
-			"year": "1964",
-			"workRu": "Сердце на ладони",
-			"workBy": "Сэрца на далоні",
-			"workEn": "The Heart on the Open Palm"
-			}
-		],
-		"youtube": "https://www.youtube.com/watch?v=GA8c8jgLyaE"
-	}
+		  	"year": "1964",
+		  	"workRu": "Сердце на ладони",
+		  	"workBy": "Сэрца на далоні",
+		  	"workEn": "The Heart on the Open Palm"
+			},
+
+      {
+        "year": "1968",
+        "workRu": "Вечерний сеанс",
+        "workBy": "Вячэрні сеанс",
+        "workEn": "The Evening session"
+      },
+
+      {
+        "year": "1970",
+        "workRu": "Снежные зимы",
+        "workBy": "Снежныя зімы",
+        "workEn": "The snow winters"
+      },
+
+      {
+        "year": "1979",
+        "workRu": "Возьму твою боль",
+        "workBy": "Вазьму твой боль",
+        "workEn": "I'll take your pain, The"
+      },
+
+      {
+        "year": "1983",
+        "workRu": "Петроград-Брест",
+        "workBy": "Петраград-Брэст",
+        "workEn": "The Petragrad-Brest"
+      },
+
+      {
+        "year": "1993",
+        "workRu": "Злая звезда",
+        "workBy": "Злая зорка",
+        "workEn": "The Evil star"
+      },
+
+      {
+        "year": "1997",
+        "workRu": "Великая княгиня",
+        "workBy": "Вялікая княгіня",
+        "workEn": "The Grand Duchess"
+      }
+
+    ],
+		"youtube": "GA8c8jgLyaE",
+
+    "location": {
+    "dx": 53.13452,
+    "dy": 30.797099,
+    "textRu": "Здесь родился Иван Шамякин."
+    }
+	},
+
+
+  {
+    "name": {
+      "ru": "Светлана Александровна Алексиевич",
+      "by": "Святлана Аляксандраўна Алексіевіч",
+      "en": "Svetlana Aleksandrovna Aleksievich"
+    },
+
+    "img": "../img/photo/Aliksevich.jpg",
+
+    "bio": [
+      {
+        "year": "1948",
+        "descriptionRu": "родилась в семье учителей",
+        "placeRu": "Украинская ССР, г. Станислав.",
+        "descriptionEn": "was born in teacher's family",
+        "placeEn": "Ukrainian SSR, Mr. Stanislav.",
+        "descriptionBy": "нарадзілася ў сям'і настаўнікаў",
+        "placeBy": "Украінская ССР, г. Станіслаў."
+      },
+
+      {
+        "year": "1965",
+        "descriptionRu": "окончила среднюю школу",
+        "placeRu": "г.п. Копаткевичи, Гомельская область",
+        "descriptionEn": "was graduate high school",
+        "placeEn": "town Kopatkevichi, Gomel region",
+        "descriptionBy": "скончыла сярэднюю школу",
+        "placeBy": "г.п. Капаткевічы, Гомельская вобласць"
+      },
+
+      {
+        "year": "1972",
+        "descriptionRu": "окончила факультет журналистики БГУ",
+        "placeRu": "г. Минск",
+        "descriptionEn": "was graduate the Faculty of Journalism of BSU",
+        "placeEn": "Minsk city",
+        "descriptionBy": "скончыла факультэт журналістыкі БДУ",
+        "placeBy": "Мінск"
+      },
+
+      {
+        "year": "1983",
+        "descriptionRu": "принята в Союз писателей БССР и СП СССР",
+        "placeRu": "Беларусь",
+        "descriptionEn": "admitted to the Union of the Byelorussian SSR and of the USSR Writers Union of Writers",
+        "placeEn": "Belarus",
+        "descriptionBy": "прынята ў Саюз пісьменнікаў БССР і СП СССР",
+        "placeBy": "Беларусь"
+      },
+
+      {
+        "year": "2015",
+        "descriptionRu": "стала лауреатом Нобелевской премии по литературе",
+        "placeRu": "Швеция",
+        "descriptionEn": "won the Nobel Prize for Literature",
+        "placeEn": "Sweden",
+        "descriptionBy": "лаўрэат Нобелеўскай прэміі па літаратуры",
+        "placeBy": "Швецыя"
+      }
+    ],
+
+    "biblio": [
+      {
+        "year": "1976",
+        "workRu": "Я уехал из деревни",
+        "workBy": "Я з'ехаў з вёскі",
+        "workEn": "I left the village"
+      },
+
+      {
+        "year": "1983",
+        "workRu": "У войны не женское лицо",
+        "workBy": "У вайны не жаночы твар",
+        "workEn": "War has no female face"
+      },
+
+      {
+        "year": "1985",
+        "workRu": "Последние свидетели",
+        "workBy": "Апошнія сведкі",
+        "workEn": "The Last Witnesses"
+      },
+
+      {
+        "year": "1989",
+        "workRu": "Цинковые мальчики",
+        "workBy": "Цынкавыя хлопчыкі",
+        "workEn": "Zinc boys"
+      },
+
+      {
+        "year": "1994",
+        "workRu": "Зачарованные смертью",
+        "workBy": "Зачараваныя смерцю",
+        "workEn": "Charmed with death"
+      },
+
+      {
+        "year": "1997",
+        "workRu": "Чернобыльская молитва",
+        "workBy": "Чарнобыльская малітва",
+        "workEn": "Chernobyl prayer"
+      }
+
+
+
+    ],
+
+    "youtube": "JC6wsNKN2H8",
+
+    "location": {
+      "dx": 48.922679,
+      "dy": 24.709246,
+      "text": "Здесь родилась Светлана Алексиевич."
+    }
+  },
+
+
+  {
+    "name": {
+      "ru": "Владимир Семёнович Короткевич",
+      "by": "Уладзімір Сямёнавіч Караткевіч",
+      "en": "Vladimir Semenovich Korotkevitch"
+    },
+
+    "img": "../img/photo/Korotkevich.jpg",
+
+    "bio": [
+      {
+        "year": "1930",
+        "descriptionRu": "родился в шляхетской семье",
+        "placeRu": "в г. Орше, Витебская область, Беларусь.",
+        "descriptionEn": "was born in a gentry family",
+        "placeEn": "Orsha, Vitebsk region, Belarus.",
+        "descriptionBy": "нарадзіўся ў шляхецкай сям'і",
+        "placeBy": "Орша, Віцебская вобласць, Беларусь."
+      },
+
+      {
+        "year": "1944",
+        "descriptionRu": "окончил среднюю школу",
+        "placeRu": "в г Орше, Витебская область, Беларусь.",
+        "descriptionEn": "graduated from high school",
+        "placeEn": "Orsha, Vitebsk region, Belarus.",
+        "descriptionBy": "скончыў сярэднюю школу",
+        "placeBy": "Орша, Віцебская вобласць, Беларусь."
+      },
+
+      {
+        "year": "1954",
+        "descriptionRu": "окончил филфак КГУ имени Т. Г. Шевченко",
+        "placeRu": "Киев, Украинская ССР.",
+        "descriptionEn": "was graduate from the philological faculty of the Taras Shevchenko KSU",
+        "placeEn": "Kiev, Ukrainian SSR.",
+        "descriptionBy": "скончыў філфак КГУ імя Т. Г. Шаўчэнка",
+        "placeBy": "Кіеў, Украінская ССР."
+      },
+
+      {
+        "year": "1955",
+        "descriptionRu": "работал школьным учителем русского языка и литературы",
+        "placeRu": "в деревне Лесовичи , Таращанский район Киевской области Украины",
+        "descriptionEn": "He worked as a school teacher of Russian language and literature",
+        "placeEn": "Village Lesovich, Tarashchansky district of Kyiv region of Ukraine",
+        "descriptionBy": "працаваў школьным настаўнікам рускай мовы і літаратуры",
+        "placeBy": "у вёсцы Лясовічы, Таращанскі раён Кіеўскай вобласці Украіны"
+      },
+
+      {
+        "year": "1962",
+        "descriptionRu": "Окончил Высшие литературные и сценарные курсы в Институте кинематографии",
+        "placeRu": "Москва, Россия",
+        "descriptionEn": "He graduated from the Higher literary and scenic courses in the Institute of Cinematography",
+        "placeEn": "Moscow, Russia",
+        "descriptionBy": "Скончыў Вышэйшыя літаратурныя і сцэнарныя курсы ў Інстытуце кінематаграфіі",
+        "placeBy": "Масква, Рассія"
+      }
+    ],
+
+    "biblio": [
+      {
+        "year": "1951",
+        "workRu": "стихи: Тут будет канал и Якубу Коласу",
+        "workBy": "вершы: Тут будзе канал і Якубу Коласу ",
+        "workEn": "There will be a channel and Yakub Kolas"
+      },
+
+      {
+        "year": "1958",
+        "workRu": "Дикая охота короля Стаха ",
+        "workBy": "Дзікае паляванне караля Стаха",
+        "workEn": " The Wild Hunt King Stach"
+      },
+
+      {
+        "year": "1960",
+        "workRu": "Повесть: Седая легенда",
+        "workBy": "Аповесць: Сівая легенда",
+        "workEn": "Tale: The Gray Legend"
+      },
+
+      {
+        "year": "1962",
+        "workRu": "Роман: Леониды не вернутся к Земле (Нельзя забыть) ",
+        "workBy": "Раман: Леаніды не вернуцца да Зямлі (Нельга забыць)",
+        "workEn": "The Leonids will not return to the Earth (Do not forget)"
+      },
+
+      {
+        "year": "1979",
+        "workRu": "Роман: Чёрный замок Ольшанский ",
+        "workBy": "Раман: Чорны замак Альшанскі",
+        "workEn": "The Black Castle Olshansky"
+      }
+
+    ],
+
+    "youtube": "TOBB80OpIRI",
+
+    "location": {
+      "dx": 54.506951,
+      "dy": 30.415745,
+      "text": "Здесь родился Владимир Короткевич."
+    }
+
+  },
+
+  {
+    "name": {
+      "ru": "Василь Владимирович Быков",
+      "by": "Васіль Уладзіміравіч Быкаў",
+      "en": "Vasil Vladimirovich Bykov"
+    },
+
+    "img": "../img/photo/Bykov.jpg",
+
+    "bio": [
+      {
+        "year": "1924",
+        "descriptionRu": "родился  в крестьянской семье",
+        "placeRu": "в деревне Бычки Ушачского района Витебской области",
+        "descriptionEn": "was born in a peasant family",
+        "placeEn": "village Bichki, Ushachsky district, Vitebsk region",
+        "descriptionBy": "нарадзіўся ў сялянскай сям'і",
+        "placeBy": "в. Бычкі Ушацкага раёна Віцебскай вобласці"
+      },
+
+      {
+        "year": "1939",
+        "descriptionRu": "Поступил на скульптурное отделение Витебского художественного училища",
+        "placeRu": "Витебск, Беларусь",
+        "descriptionEn": "entered to the sculpture department of the Vitebsk Art School",
+        "placeEn": "Vitebsk, Belarus",
+        "descriptionBy": "Паступіў на скульптурнае аддзяленне Віцебскага мастацкага вучылішча",
+        "placeBy": "Віцебск, Беларусь"
+      },
+
+      {
+        "year": "1942",
+        "descriptionRu": "Призван в армию летом, окончил Саратовское пехотное училище",
+        "placeRu": "СССР",
+        "descriptionEn": "Enlisted in the Army in the summer, he graduated from the Saratov Infantry School",
+        "placeEn": "USSR",
+        "descriptionBy": "Прызваны ў армію летам, скончыў Саратаўскае пяхотнае вучылішча",
+        "placeBy": "СССР"
+      },
+
+      {
+        "year": "1947",
+        "descriptionRu": "После демобилизации жил в Гродно Печатался, работал в мастерских, в редакции областной газеты «Гродненская правда» ",
+        "placeRu": "Гродно, Беларусь",
+        "descriptionEn": "After demobilization he lived in Grodno, typing, working in the studio, in the wording of the regional newspaper Grodno Pravda",
+        "placeEn": "",
+        "descriptionBy": "Пасля дэмабілізацыі жыў у Гродне, друкаваўся, працаваў у майстэрнях, у рэдакцыі абласной газеты «Гродзенская праўда»",
+        "placeBy": ""
+      },
+
+      {
+        "year": "1978",
+        "descriptionRu": "Переехал в Минск. Избирался депутатом Верховного Совета Белорусской ССР",
+        "placeRu": "Минск, Беларусь",
+        "descriptionEn": "He moved to Minsk. He was elected a deputy of the Supreme Soviet of the Byelorussian SSR",
+        "placeEn": "Minsk, Belarus",
+        "descriptionBy": "Пераехаў у Мінску. Абіраўся дэпутатам Вярхоўнага Савета Беларускай ССР",
+        "placeBy": "Мінск, Беларусь"
+      },
+
+      {
+        "year": "1988",
+        "descriptionRu": "Стал одним из учредителей Белорусского народного фронта.",
+        "placeRu": "Минск, Беларусь",
+        "descriptionEn": "He became one of the founders of the Belarusian Popular Front.",
+        "placeEn": "Minsk, Belarus",
+        "descriptionBy": "Стаў адным з заснавальнікаў Беларускага народнага фронту.",
+        "placeBy": "Мінск, Беларусь"
+      },
+
+      {
+        "year": "1989",
+        "descriptionRu": "Избран народным депутатом СССР.",
+        "placeRu": "Минск, Беларусь",
+        "descriptionEn": "Elected deputy of the USSR.",
+        "placeEn": "Minsk, Belarus",
+        "descriptionBy": "Абраны народным дэпутатам СССР.",
+        "placeBy": "Мінск, Беларусь"
+      },
+
+      {
+        "year": "1997",
+        "descriptionRu": "Жил за границей в политической эмиграции ",
+        "placeRu": "Окрестности Хельсинки, Финляндия",
+        "descriptionEn": "lived abroad in political exile",
+        "placeEn": "Landmarks of Helsinki, Finland",
+        "descriptionBy": "Жыў за мяжой у палітычнай эміграцыі",
+        "placeBy": "Наваколлі Хельсінкі, Фінляндыя"
+      },
+
+      {
+        "year": "2003",
+        "descriptionRu": "Умер от злокачественной опухоли желудка",
+        "placeRu": "д. Боровляны, Минская область.",
+        "descriptionEn": "He died of cancer of the stomach",
+        "placeEn": "v. Borovliany, Minsk region.",
+        "descriptionBy": "Памёр ад злаякаснай пухліны страўніка",
+        "placeBy": "в. Бараўляны, Мінская вобласць."
+      }
+    ],
+
+    "biblio": [
+      {
+        "year": "1959",
+        "workRu": "повесть: Журавлиный крик",
+        "workBy": "аповесць: Жураўліны крык ",
+        "workEn": "Tale: The Crane's Scream"
+      },
+
+      {
+        "year": "1961",
+        "workRu": "повесть: Третья ракета",
+        "workBy": "аповесць: Трэцяя ракета ",
+        "workEn": "Tale: The Third rocket"
+      },
+
+      {
+        "year": "1963",
+        "workRu": "повесть: Альпийская баллада",
+        "workBy": "аповесць: Альпійская балада",
+        "workEn": "Tale: The Alpine ballad"
+      },
+
+      {
+        "year": "1965",
+        "workRu": "повесть: Мёртвым не больно",
+        "workBy": "аповесць: Мёртвым не баліць",
+        "workEn": "Tale: The Dead not hurt"
+      },
+
+      {
+        "year": "1970",
+        "workRu": "повесть: Сотников",
+        "workBy": "аповесць: Сотнікаў",
+        "workEn": "Tale: The Sotnikov"
+      },
+
+      {
+        "year": "1971",
+        "workRu": "повесть: Обелиск",
+        "workBy": "аповесць: Абеліск",
+        "workEn": "Tale: The Obelisk"
+      },
+
+      {
+        "year": "1972",
+        "workRu": "повесть: Дожить до рассвета",
+        "workBy": "аповесць: Дажыць да світання",
+        "workEn": "Tale: The Live to dawn"
+      }
+
+    ],
+
+    "youtube": "VgIEoFsgMck",
+
+    "location": {
+      "dx": 55.165683,
+      "dy": 28.37705,
+      "text": "Здесь родился Василь Быков."
+    }
+
+  },
+
+  {
+    "name": {
+      "ru": "Владимир Алексеевич Орлов",
+      "by": "Уладзімір Аляксеевіч Арлоў",
+      "en": "Vladimir Orlov"
+    },
+
+    "img": "../img/photo/Arlou.jpg",
+
+    "bio": [
+      {
+        "year": "1953",
+        "descriptionRu": "Родился",
+        "placeRu": "в г. Полоцк, Витебская обл. Беларусь.",
+        "descriptionEn": "was born",
+        "placeEn": "in Polotsk, Vitebsk region. Belarus.",
+        "descriptionBy": "нарадзіўся",
+        "placeBy": "у г. Полацк, Віцебская вобл. Беларусь."
+      },
+
+      {
+        "year": "1970",
+        "descriptionRu": "окончил среднюю школу ",
+        "placeRu": "в г. Полоцк, Витебская обл. Беларусь.",
+        "descriptionEn": "graduated from high school",
+        "placeEn": "in Polotsk, Vitebsk region. Belarus.",
+        "descriptionBy": "скончыў сярэднюю школу",
+        "placeBy": "у г. Полацк, Віцебская вобл. Беларусь."
+      },
+
+      {
+        "year": "1973",
+        "descriptionRu": "Первые свои стихотворения напечатал в студенческих журналах",
+        "placeRu": "в г. Новополоцк, Витебская обл. Беларусь.",
+        "descriptionEn": "He published his first poems in student journals.",
+        "placeEn": "in Novopolotsk, Vitebsk region. Belarus.",
+        "descriptionBy": "Першыя свае вершы надрукаваў у студэнцкіх часопісах",
+        "placeBy": "у г. Наваполацк, Віцебская вобл. Беларусь."
+      },
+
+      {
+        "year": "1975",
+        "descriptionRu": "Окончил  Исторический факультет БГУ",
+        "placeRu": "в г. Минск. Беларусь.",
+        "descriptionEn": "He graduated from the Faculty of History of BSU",
+        "placeEn": "Minsk. Belarus.",
+        "descriptionBy": "Скончыў гістарычны факультэт БДУ",
+        "placeBy": "у г. Мінск. Беларусь."
+      },
+
+      {
+        "year": "1986",
+        "descriptionRu": "Становится членом Союза белорусских писателей. Лауреат премии Ленинского комсомола Беларуси",
+        "placeRu": "Беларусь.",
+        "descriptionEn": "Become a member of the Union of Belarusian Writers. Winner of the Leninsky Komsomol Prize of Belarus",
+        "placeEn": "Belarus.",
+        "descriptionBy": "Становіцца членам Саюза беларускіх пісьменнікаў. Лаўрэат прэміі Ленінскага камсамола Беларусі",
+        "placeBy": "Беларусь."
+      },
+
+      {
+        "year": "1991",
+        "descriptionRu": "За вклад в разработку темы исторического прошлого Беларуси награждён медалью Франциска Скорины",
+        "placeRu": "Беларусь.",
+        "descriptionEn": "For his contribution to the development of the theme of the historical past of Belarus he was awarded the Francysk Skaryna Medal",
+        "placeEn": "Belarus.",
+        "descriptionBy": "За ўклад у распрацоўку тэмы гістарычнага мінулага Беларусі узнагароджаны медалём Францыска Скарыны",
+        "placeBy": "Беларусь."
+      },
+
+      {
+        "year": "1997",
+        "descriptionRu": "Сотрудник редакции журнала «Крыніца»",
+        "placeRu": "Беларусь.",
+        "descriptionEn": "The editorial staff of the journal Krynitsa ",
+        "placeEn": "Belarus.",
+        "descriptionBy": "Супрацоўнік рэдакцыі часопіса «Крыніца»",
+        "placeBy": "Беларусь."
+      }
+    ],
+
+    "biblio": [
+
+      {
+        "year": "1988",
+        "workRu": "День, когда упала стрела: Повести и рассказы.",
+        "workBy": "Дзень, калі ўпала страла: Аповесці і апавяданні.",
+        "workEn": "The day when the boom fell: Novels and Stories."
+      },
+
+      {
+        "year": "1990",
+        "workRu": "Пока не погасла свеча.",
+        "workBy": "Пакуль не згасла свечка",
+        "workEn": "The until the candle went out"
+      },
+
+      {
+        "year": "1992",
+        "workRu": "Рандеву на маневрах",
+        "workBy": "Рандэву на манеўрах",
+        "workEn": "The Randevu on maneuvers"
+      },
+
+      {
+        "year": "1993",
+        "workRu": "Милость князя Иеронима: Повести. рассказы",
+        "workBy": "Міласць князя Гераніма: Аповесці. Апавяданні",
+        "workEn": "The Grace Prince Jerome: Tale. stories"
+      },
+
+      {
+        "year": "1994",
+        "workRu": "Пять мужчин у лесника",
+        "workBy": "Пяць мужчын у леснічоўцы",
+        "workEn": "The Five men in the forester"
+      },
+
+      {
+        "year": "2001",
+        "workRu": "Сны императора: Рассказы, повести, эссе",
+        "workBy": "Сны імператара: Апавяданні, аповесці, эсэ",
+        "workEn": "The Emperor's Dreams: Stories, essay"
+      }
+    ],
+
+    "youtube": "kIHfdVpjzAk",
+
+    "location": {
+      "dx": 55.165683,
+      "dy": 28.37705,
+      "text": "Здесь родился Владимир Орлов"
+    }
+
+  }
 ]
