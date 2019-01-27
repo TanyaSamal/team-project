@@ -139,3 +139,7 @@ footer {
   margin: 30px auto;
   justify-content: center;
 }
+
+li.dropdown:hover .dropdown-menu{
+  display: block;    
+}

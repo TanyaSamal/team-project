@@ -56,21 +56,13 @@ const ready = () => {
 
   loading('ru');
 
-  const startSearch = () => {
+  const startSearch = (lang) => {
     fetch('../data/data.json')
       .then(response => response.json())
       .then((resultJson) => {
         const keyWord = document.body.querySelector('.form-control').value;
         const mainEl = document.querySelector('.daily-author');
         mainEl.innerHTML = '';
-        const currantLang = document.body.querySelector('#navbardrop').innerHTML;
-        let lang = 'ru';
-        switch (currantLang) {
-          case 'Русский': lang = 'ru'; break;
-          case 'Беларускi': lang = 'by'; break;
-          case 'English': lang = 'en'; break;
-          default: lang = 'ru';
-        }
         let res = 0;
         if (keyWord !== '') {
           resultJson.forEach((obj) => {
@@ -139,21 +131,41 @@ const ready = () => {
         mainEl.innerHTML = '';
         loading(lang);
       } else {
-        startSearch();
+        startSearch(lang);
       }
     }
   };
 
   const enterSearch = (e) => {
-    if (e.keyCode === 13) {
-      startSearch();
+    const currantLang = document.body.querySelector('#navbardrop').innerHTML;
+    let lang = 'ru';
+    switch (currantLang) {
+      case 'Русский': lang = 'ru'; break;
+      case 'Беларускi': lang = 'by'; break;
+      case 'English': lang = 'en'; break;
+      default: lang = 'ru';
     }
+    if (e.keyCode === 13) {
+      startSearch(lang);
+    }
+  };
+
+  const btnSearch = () => {
+    const currantLang = document.body.querySelector('#navbardrop').innerHTML;
+    let lang = 'ru';
+    switch (currantLang) {
+      case 'Русский': lang = 'ru'; break;
+      case 'Беларускi': lang = 'by'; break;
+      case 'English': lang = 'en'; break;
+      default: lang = 'ru';
+    }
+    startSearch(lang);
   };
 
   const findBtn = document.body.querySelector('.btn-outline-secondary');
   const input = document.body.querySelector('.form-control');
   input.addEventListener('keypress', enterSearch);
-  findBtn.addEventListener('click', startSearch);
+  findBtn.addEventListener('click', btnSearch);
   const langSelect = document.body.querySelector('.dropdown');
   langSelect.addEventListener('click', translateSearch);
 };

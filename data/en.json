@@ -21,6 +21,8 @@
     "p4": "Vasiliy Repin",
     "p4Work": "Data for the portal",
     "p5": "Igor Baranov",
-    "p5Work": "Writers List / Search"
+    "p5Work": "Writers List / Search",
+    "search": "Search",
+    "placeholder": "Enter name, location or year"
   }
 }

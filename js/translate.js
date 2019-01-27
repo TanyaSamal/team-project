@@ -33,6 +33,10 @@ window.onload = () => {
           names[4].innerHTML = resultJson.values.p5;
           works[4].innerHTML = resultJson.values.p5Work;
         }
+        if (document.querySelector('.form-control')) {
+          document.querySelector('.form-control').placeholder = resultJson.values.placeholder;
+          document.querySelector('.btn-outline-secondary').innerHTML = resultJson.values.search;
+        }
       });
   };
 
