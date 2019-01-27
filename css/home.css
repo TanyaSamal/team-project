@@ -135,7 +135,7 @@ footer {
 
 .control {
   display: flex;
-  width: 80%;
+  width: 60%;
   margin: 30px auto;
   justify-content: center;
 }

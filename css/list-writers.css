@@ -13,8 +13,7 @@
 serch form
 */
 input[type="text"] {
-  width: 40%;
-  padding: 10px;
+  padding: 20px;
   font-size: 19px;
   outline: none;
   background-image: url(../img/icon/icon-input.gif);
