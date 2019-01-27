@@ -1,57 +1,93 @@
-var input, search, pr, result, result_arr, locale_HTML, result_store;
+const ready = () => {
+  const printAuthor = (obj, key1, action1) => {
+    const mainEl = document.querySelector(".daily-author");
 
-function func() {
-  locale_HTML = document.body.innerHTML; // сохраняем в переменную весь body (Первоначальный)
-}
-setTimeout(func, 1000); //ждем подгрузки Jsona и выполняем
+    const res = document.createElement("div");
+    res.className = "result";
 
-function FindOnPage(name, status) {
-  input = document.getElementById(name).value; //получаем значение из поля в html
+    const leftPart = document.createElement("div");
+    leftPart.className = ".left-part";
+    res.appendChild(leftPart);
 
-  if (input.length < 3 && status == true) {
-    alert("Для поиска вы должны ввести три или более символов");
-    function FindOnPageBack() {
-      document.body.innerHTML = locale_HTML;
+    const pic = document.createElement("img");
+    pic.src = obj.img;
+    pic.classList.add("photo");
+    leftPart.appendChild(pic);
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "info";
+
+    const name = document.createElement("h3");
+    name.innerHTML = obj.name.ru;
+    wrapper.appendChild(name);
+
+    if (key1) {
+      const year = document.createElement("p");
+      year.innerHTML = `${key1} - ${action1}`;
+      wrapper.appendChild(year);
     }
-  }
 
-  if (input.length >= 3) {
-    function FindOnPageGo() {
-      search = "/" + input + "/g"; //делаем из строки регуярное выражение
-      pr = document.body.innerHTML; // сохраняем в переменную весь body
-      result = pr.match(/>(.*?)</g); //отсекаем все теги и получаем только текст
-      result_arr = []; //в этом массиве будем хранить результат работы (подсветку)
+    const link = document.createElement("a");
+    link.href = "/";
+    link.innerHTML = "Читать далее...";
+    wrapper.appendChild(link);
 
-      var warning = true;
-      for (var i = 0; i < result.length; i++) {
-        if (result[i].match(eval(search)) != null) {
-          warning = false;
+    res.appendChild(wrapper);
+    mainEl.appendChild(res);
+  };
+
+  const loading = () => {
+    fetch("../data/data.json")
+      .then(response => response.json())
+      .then(resultJson => {
+        resultJson.forEach(o => {
+          printAuthor(o, o.bio[0].year, o.bio[0].descriptionRu);
+        });
+      });
+  };
+
+  loading();
+
+  const startSearch = () => {
+    fetch("../data/data.json")
+      .then(response => response.json())
+      .then(resultJson => {
+        const keyWord = document.body.querySelector(".search").value;
+        const mainEl = document.querySelector(".daily-author");
+        mainEl.innerHTML = "";
+        let res = 0;
+        if (keyWord !== "") {
+          resultJson.forEach(obj => {
+            const name = obj.name.ru.toLowerCase();
+            if (name.indexOf(keyWord) !== -1) {
+              printAuthor(obj);
+              res += 1;
+            }
+            obj.bio.forEach(bioObj => {
+              if (
+                bioObj.year === keyWord ||
+                bioObj.placeRu.indexOf(keyWord) !== -1
+              ) {
+                printAuthor(obj, keyWord, bioObj.descriptionRu);
+                res += 1;
+              }
+            });
+            obj.biblio.forEach(biblioObj => {
+              if (biblioObj.year === keyWord) {
+                printAuthor(obj, keyWord, biblioObj.workRu);
+                res += 1;
+              }
+            });
+          });
         }
-      }
-      if (warning == true) {
-        alert("Не найдено ни одного совпадения");
-      }
+        if (res === 0) {
+          mainEl.innerHTML = "Ничего не найдено";
+        }
+      });
+  };
 
-      for (var i = 0; i < result.length; i++) {
-        result_arr[i] = result[i].replace(
-          eval(search),
-          '<span style="background-color:yellow;">' + input + "</span>"
-        ); //находим нужные элементы, задаем стиль и сохраняем в новый массив
-      }
-      for (var i = 0; i < result.length; i++) {
-        pr = pr.replace(result[i], result_arr[i]); //заменяем в переменной с html текст на новый из новогом массива
-      }
-      document.body.innerHTML = pr; //заменяем html код
-    }
-  }
-  function FindOnPageBack() {
-    document.body.innerHTML = locale_HTML;
-  }
-  if (status) {
-    FindOnPageBack();
-    FindOnPageGo();
-  } //чистим прошлое и Выделяем найденное
-  if (!status) {
-    FindOnPageBack();
-  } //Снимаем выделение
-}
+  const findBtn = document.body.querySelector(".btn-outline-secondary");
+  findBtn.addEventListener("click", startSearch);
+};
+
+document.addEventListener("DOMContentLoaded", ready);

@@ -5,18 +5,14 @@
 }
 
 @media screen and (max-width: 760px) {
-  .left-part {
-    margin: 0;
-  }
-  .right-part {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: stretch; */
-    /* align-items: center; */
-    /* margin-left: 80px; */
+  .photo,
+  .info {
     margin: 0 auto;
   }
-  .list-writers .content .writer {
+  .right-part {
+    margin: 0 auto;
+  }
+  .result {
     display: block;
     width: 90%;
     margin: auto;
@@ -25,10 +21,7 @@
 }
 
 @media screen and (max-width: 414px) {
-  .left-part img {
+  .photo {
     height: 300px;
   }
-  /* .list-writers .content .writer {
-    display: block;
-  } */
 }

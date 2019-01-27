@@ -46,85 +46,15 @@
     </nav>
 
     <main role="main" class="container">
+
       <section class="list-writers">
         <form class="field-serch">
-          <input
-            class="place_for_search"
-            type="text"
-            id="text-to-find"
-            value=""
-            placeholder="Введите имя, город"
-            autofocus
-          />
-          <input
-            class="button_for_turn_back"
-            type="button"
-            onclick="javascript: FindOnPage('text-to-find',false); return false;"
-            value="Очистить"
-            title="Отменить поиск"
-          />
-          <input
-            class="button_for_search"
-            type="submit"
-            onclick="javascript: FindOnPage('text-to-find',true); return false;"
-            value="Искать"
-            title="Начать поиск"
-          />
-        </form>
-
-        <div class="content">
-          <div class="writer">
-            <div class="left-part">
-              <a href="#"><img src="img/photo/Shamyakin.jpg" alt="photo"/></a>
-            </div>
-
-            <div class="right-part">
-              <a href="#"><span class="name"></span></a>
-              <span class="date-of-birth"></span> <span class="location"></span>
-            </div>
-          </div>
-          <div class="writer">
-            <div class="left-part">
-              <a href="#"><img src="img/photo/Aliksevich.jpg" alt="photo"/></a>
-            </div>
-
-            <div class="right-part">
-              <a href="#"><span class="name"></span></a>
-              <span class="date-of-birth"></span> <span class="location"></span>
-            </div>
-          </div>
-          <div class="writer">
-            <div class="left-part">
-              <a href="#"><img src="img/photo/Korotkevich.jpg" alt="photo"/></a>
-            </div>
-
-            <div class="right-part">
-              <a href="#"><span class="name"></span></a>
-              <span class="date-of-birth"></span> <span class="location"></span>
-            </div>
-          </div>
-          <div class="writer">
-            <div class="left-part">
-              <a href="#"><img src="img/photo/Bykov.jpg" alt="photo"/></a>
-            </div>
-
-            <div class="right-part">
-              <a href="#"><span class="name"></span></a>
-              <span class="date-of-birth"></span> <span class="location"></span>
-            </div>
-          </div>
-          <div class="writer">
-            <div class="left-part">
-              <a href="#"><img src="img/photo/Arlou.jpg" alt="photo"/></a>
-            </div>
-
-            <div class="right-part">
-              <a href="#"><span class="name"></span></a>
-              <span class="date-of-birth"></span> <span class="location"></span>
-            </div>
-          </div>
-        </div>
+            <input  type="text" class="search"  placeholder="Введите имя, город" value=""></input>
+            <button type="button" class="btn btn-outline-secondary">Поиск</button>
+        </form>     
+            <div class="daily-author"></div>             
       </section>
+
     </main>
 
     <script
@@ -142,7 +72,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
-    <script src="data/data.js"></script>
+        
     <script src="script/list-writers.js"></script>
     <script src="script/serch.js"></script>
   </body>
