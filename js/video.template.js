@@ -7,7 +7,7 @@ const templateVideo =`
                   <div class="modal-content">
                     <div class="modal-body mb-0 p-0">
                       <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                        <iframe id="video-iframe" class="embed-responsive-item" src=""
+                        <iframe id="video-iframe" class="embed-responsive-item" src=" "
                           allowfullscreen></iframe>
                       </div>
                     </div>
@@ -15,7 +15,7 @@ const templateVideo =`
                 </div>
               </div>
               <a><img id="video-img" src="" alt="video"
-                  data-toggle="modal" data-target="#modal6"></a>
+                  data-toggle="modal" data-target="#modal6" height="105" width="200"></a>
           </div>
 </section>
 `;

@@ -1,4 +1,4 @@
-const templateInfo =`
+const templateInfo = `
   <section id="author-info" class="bacground-template">
   <div class="container">   
     <div class="row align-items-center">
