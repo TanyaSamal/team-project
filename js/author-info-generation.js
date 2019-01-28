@@ -5,6 +5,9 @@ class AuthorInfo {
     contentEl.insertAdjacentHTML('beforeend', templateInfo);
     contentEl.insertAdjacentHTML('beforeend', templateTimeline);
     contentEl.insertAdjacentHTML('beforeend', templateWorks);
+    contentEl.insertAdjacentHTML('beforeend', templateGallery);
+    contentEl.insertAdjacentHTML('beforeend', templateVideo);
+    contentEl.insertAdjacentHTML('beforeend', templateMap);
   }
 
   static empty() {
