@@ -63,7 +63,7 @@ const ready = () => {
     fetch('../data/data.json')
       .then(response => response.json())
       .then((resultJson) => {
-        const keyWord = document.body.querySelector('.form-control').value;
+        const keyWord = document.body.querySelector('.form-control').value.toLowerCase();
         const mainEl = document.querySelector('.daily-author');
         mainEl.innerHTML = '';
         let res = 0;
@@ -78,10 +78,10 @@ const ready = () => {
             obj.bio.forEach((bioObj, ind) => {
               let place = '';
               switch (lang) {
-                case 'ru': place = bioObj.placeRu; break;
-                case 'by': place = bioObj.placeBy; break;
-                case 'en': place = bioObj.placeEn; break;
-                default: place = bioObj.placeRu; break;
+                case 'ru': place = bioObj.placeRu.toLowerCase(); break;
+                case 'by': place = bioObj.placeBy.toLowerCase(); break;
+                case 'en': place = bioObj.placeEn.toLowerCase(); break;
+                default: place = bioObj.placeRu.toLowerCase(); break;
               }
               if (bioObj.year === keyWord || place.indexOf(keyWord) !== -1) {
                 switch (lang) {
