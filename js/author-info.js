@@ -6,7 +6,7 @@ function generatePage(numberOfAuthor, language) {
     });
 }
 
-window.onload = function() {
+function ready() {
   if (localStorage.getItem('numberOfAuthor') !== null) {
     const numberOfAuthor = localStorage.getItem('numberOfAuthor');
     generatePage(+numberOfAuthor, "ru");
@@ -14,6 +14,8 @@ window.onload = function() {
     generatePage(0, "ru");
   }
 }
+
+document.addEventListener('DOMContentLoaded', ready);
 
 function generateInformation(resultJson, numberOfAuthor, language){
   AuthorInfo.draw();
