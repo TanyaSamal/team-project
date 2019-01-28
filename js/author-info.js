@@ -9,7 +9,17 @@ function generatePage(numberOfAuthor, language) {
 function ready() {
   if (localStorage.getItem('numberOfAuthor') !== null) {
     const numberOfAuthor = localStorage.getItem('numberOfAuthor');
-    generatePage(+numberOfAuthor, 'ru');
+    if (localStorage.getItem('lang') !== null) {
+      const localLang = localStorage.getItem('lang');
+      switch (localLang) {
+        case 'Русский': generatePage(+numberOfAuthor, 'ru'); break;
+        case 'Беларускi': generatePage(+numberOfAuthor, 'by'); break;
+        case 'English': generatePage(+numberOfAuthor, 'en'); break;
+        default: generatePage(+numberOfAuthor, 'ru'); break;
+      }
+    } else {
+      generatePage(+numberOfAuthor, 'ru');
+    }
   } else {
     generatePage(0, 'ru');
   }

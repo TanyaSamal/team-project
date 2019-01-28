@@ -40,25 +40,28 @@ window.onload = () => {
       });
   };
 
-  fetchLang(ru);
+  if (localStorage.getItem('lang') !== null) {
+    const localLang = localStorage.getItem('lang');
+    switch (localLang) {
+      case 'Русский': fetchLang(ru); break;
+      case 'Беларускi': fetchLang(by); break;
+      case 'English': fetchLang(en); break;
+      default: fetchLang(ru); break;
+    }
+  } else {
+    fetchLang(ru);
+  }
 
   const selectLanguage = (e) => {
     if (e.target.nodeName === 'A') {
       const lang = e.target.innerHTML;
       switch (lang) {
-        case 'Русский':
-          fetchLang(ru);
-          break;
-        case 'Беларускi':
-          fetchLang(by);
-          break;
-        case 'English':
-          fetchLang(en);
-          break;
-        default:
-          fetchLang(ru);
-          break;
+        case 'Русский': fetchLang(ru); break;
+        case 'Беларускi': fetchLang(by); break;
+        case 'English': fetchLang(en); break;
+        default: fetchLang(ru); break;
       }
+      localStorage.setItem('lang', lang);
     }
   };
 
