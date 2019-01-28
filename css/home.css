@@ -90,12 +90,13 @@ footer {
 .person-pic {
   border-radius: 50%;
   border: 5px solid rgb(81, 1, 1);
-  width: 170px;
+  width: 150px;
 }
 
-.person p {
+.person p, .git {
   font-size: 1.1rem;
 }
+
 
 .git a, .info a {
   color: rgb(81, 1, 1);
@@ -138,5 +139,5 @@ footer {
 }
 
 li.dropdown:hover .dropdown-menu{
-  display: block;    
+  display: block;
 }
