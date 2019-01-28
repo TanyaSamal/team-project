@@ -82,6 +82,17 @@ function initGallery(resultJson, numberOfAuthor) {
     $(`.href${i}`).attr('href', src);
     $(`.img${i}`).attr('src', src);
   }
+  $(document).ready(() => {
+    $('.fancybox').fancybox({
+      openEffect: 'none',
+      closeEffect: 'none',
+    });
+    $('.zoom').hover(() => {
+      $(this).addClass('transition');
+    }, () => {
+      $(this).removeClass('transition');
+    });
+  });
 }
 
 function initVideo(resultJson, numberOfAuthor) {
