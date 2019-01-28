@@ -57,7 +57,17 @@ const ready = () => {
       });
   };
 
-  loading('ru');
+  if (localStorage.getItem('lang') !== null) {
+    const localLang = localStorage.getItem('lang');
+    switch (localLang) {
+      case 'Русский': loading('ru'); break;
+      case 'Беларускi': loading('by'); break;
+      case 'English': loading('en'); break;
+      default: loading('ru'); break;
+    }
+  } else {
+    loading('ru');
+  }
 
   const startSearch = (lang) => {
     fetch('../data/data.json')

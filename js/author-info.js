@@ -9,7 +9,17 @@ function generatePage(numberOfAuthor, language) {
 function ready() {
   if (localStorage.getItem('numberOfAuthor') !== null) {
     const numberOfAuthor = localStorage.getItem('numberOfAuthor');
-    generatePage(+numberOfAuthor, 'ru');
+    if (localStorage.getItem('lang') !== null) {
+      const localLang = localStorage.getItem('lang');
+      switch (localLang) {
+        case 'Русский': generatePage(+numberOfAuthor, 'ru'); break;
+        case 'Беларускi': generatePage(+numberOfAuthor, 'by'); break;
+        case 'English': generatePage(+numberOfAuthor, 'en'); break;
+        default: generatePage(+numberOfAuthor, 'ru'); break;
+      }
+    } else {
+      generatePage(+numberOfAuthor, 'ru');
+    }
   } else {
     generatePage(0, 'ru');
   }
@@ -104,3 +114,24 @@ function initVideo(resultJson, numberOfAuthor) {
     $('#modal6 iframe').attr('src', $('#modal6 iframe').attr('src'));
   });
 }
+
+const translateContent = (e) => {
+  if (e.target.nodeName === 'A') {
+    let lang = e.target.innerHTML;
+    switch (lang) {
+      case 'Русский': lang = 'ru'; break;
+      case 'Беларускi': lang = 'by'; break;
+      case 'English': lang = 'en'; break;
+      default: lang = 'ru';
+    }
+    if (localStorage.getItem('numberOfAuthor') !== null) {
+      const numberOfAuthor = localStorage.getItem('numberOfAuthor');
+      generatePage(+numberOfAuthor, lang);
+    } else {
+      generatePage(0, lang);
+    }
+  }
+};
+
+const langSelect = document.body.querySelector('.dropdown');
+langSelect.addEventListener('click', translateContent);
