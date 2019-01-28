@@ -57,3 +57,24 @@ function generateInformation(resultJson, numberOfAuthor, language){
   });
   authorWorksInfo.innerHTML = addInfo;
 }
+
+const translateContent = (e) => {
+  if (e.target.nodeName === 'A') {
+    let lang = e.target.innerHTML;
+    switch (lang) {
+      case 'Русский': lang = 'ru'; break;
+      case 'Беларускi': lang = 'by'; break;
+      case 'English': lang = 'en'; break;
+      default: lang = 'ru';
+    }
+    if (localStorage.getItem('numberOfAuthor') !== null) {
+      const numberOfAuthor = localStorage.getItem('numberOfAuthor');
+      generatePage(+numberOfAuthor, lang);
+    } else {
+      generatePage(0, lang);
+    }
+  }
+};
+
+const langSelect = document.body.querySelector('.dropdown');
+langSelect.addEventListener('click', translateContent);
