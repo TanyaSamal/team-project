@@ -1,5 +1,5 @@
 const ready = () => {
-  const printAuthor = (obj, key1, action1) => {
+  const printAuthor = (obj, index, key1, action1) => {
     const mainEl = document.querySelector(".daily-author");
 
     const res = document.createElement("div");
@@ -28,8 +28,12 @@ const ready = () => {
     }
 
     const link = document.createElement("a");
-    link.href = "/";
+    link.href = "./author-info.html";
     link.innerHTML = "Читать далее...";
+    link.onclick = function(){
+      localStorage.setItem('numberOfAuthor', index);
+    }
+    
     wrapper.appendChild(link);
 
     res.appendChild(wrapper);
@@ -40,8 +44,8 @@ const ready = () => {
     fetch("../data/data.json")
       .then(response => response.json())
       .then(resultJson => {
-        resultJson.forEach(o => {
-          printAuthor(o, o.bio[0].year, o.bio[0].descriptionRu);
+        resultJson.forEach((o, index) => {
+          printAuthor(o, index, o.bio[0].year, o.bio[0].descriptionRu);
         });
       });
   };
@@ -57,24 +61,24 @@ const ready = () => {
         mainEl.innerHTML = "";
         let res = 0;
         if (keyWord !== "") {
-          resultJson.forEach(obj => {
+          resultJson.forEach((obj, index) => {
             const name = obj.name.ru.toLowerCase();
             if (name.indexOf(keyWord) !== -1) {
-              printAuthor(obj);
+              printAuthor(obj, index);
               res += 1;
             }
-            obj.bio.forEach(bioObj => {
+            obj.bio.forEach((bioObj, index) => {
               if (
                 bioObj.year === keyWord ||
                 bioObj.placeRu.indexOf(keyWord) !== -1
               ) {
-                printAuthor(obj, keyWord, bioObj.descriptionRu);
+                printAuthor(obj, index, keyWord, bioObj.descriptionRu);
                 res += 1;
               }
             });
-            obj.biblio.forEach(biblioObj => {
+            obj.biblio.forEach((biblioObj, index) => {
               if (biblioObj.year === keyWord) {
-                printAuthor(obj, keyWord, biblioObj.workRu);
+                printAuthor(obj, index, keyWord, biblioObj.workRu);
                 res += 1;
               }
             });
