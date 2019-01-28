@@ -2,15 +2,142 @@ body {
   font-size: 1.5rem;
 }
 
+.navbar {
+  padding: 0.5rem 2rem;
+}
+
 .navbar-nav {
   padding-left: 30px;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
 }
 
 .dropdown {
   padding-left: 20px;
 }
 
+header {
+  background: url(../img/header.png);
+  background-color: brown;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.33) inset;
+}
+
 .starter-template {
-  padding: 3rem 1.5rem;
+  padding: 5rem 1.5rem;
   text-align: center;
+  color: white;
+}
+
+.about {
+  margin: 0 40px;
+}
+
+h2 {
+  overflow: hidden;
+  position: relative;
+  margin: 40px 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+h2:before,
+h2:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 50%;
+  height: 1px;
+  width: 60px;
+  vertical-align: middle;
+  background: black;
+}
+
+h2:before {
+  left: -10px;
+  margin-left: -50%;
+}
+
+h2:after {
+  left: 10px;
+  margin-right: -50%;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #343a40;
+  text-align: center;
+  color: rgba(255,255,255,.5);
+  padding: 20px 0;
+}
+
+.persons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person {
+  text-align: center;
+}
+
+.person-pic {
+  border-radius: 50%;
+  border: 5px solid rgb(81, 1, 1);
+  width: 150px;
+}
+
+.person p, .git {
+  font-size: 1.1rem;
+}
+
+
+.git a, .info a {
+  color: rgb(81, 1, 1);
+}
+
+.git a:hover, .info a:hover {
+  text-decoration: none;
+  color: rgb(107, 49, 49);
+}
+
+.git img {
+  width: 30px;
+}
+
+.daily-author {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.daily-author img {
+  margin-right: 40px;
+}
+
+.photo {
+  height: 350px;
+}
+
+.result {
+  display: flex;
+  padding: 10px 0;
+}
+
+.control {
+  display: flex;
+  width: 60%;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+li.dropdown:hover .dropdown-menu{
+  display: block;
 }
