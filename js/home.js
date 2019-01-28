@@ -28,7 +28,10 @@ fetch('../data/data.json')
     content.appendChild(book);
 
     const link = document.createElement('a');
-    link.href = '/';
+    link.href = './html/author-info.html';
+    link.onclick = () => {
+      localStorage.setItem('numberOfAuthor', rand);
+    };
     link.innerHTML = 'Читать далее...';
     content.appendChild(link);
 
