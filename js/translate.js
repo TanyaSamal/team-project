@@ -1,7 +1,7 @@
 window.onload = () => {
-  const ru = '../data/ru.json';
-  const en = '../data/en.json';
-  const by = '../data/by.json';
+  const ru = 'https://raw.githubusercontent.com/TanyaSamal/team-project/master/data/ru.json';
+  const en = 'https://raw.githubusercontent.com/TanyaSamal/team-project/master/data/en.json';
+  const by = 'https://raw.githubusercontent.com/TanyaSamal/team-project/master/data/by.json';
 
   const fetchLang = (url) => {
     fetch(url)
@@ -36,6 +36,13 @@ window.onload = () => {
         if (document.querySelector('.form-control')) {
           document.querySelector('.form-control').placeholder = resultJson.values.placeholder;
           document.querySelector('.btn-outline-secondary').innerHTML = resultJson.values.search;
+        }
+        if (document.querySelector('.container.bacground-template h2')) {
+          document.querySelector('.container.bacground-template h2').innerHTML = resultJson.values.bio;
+          document.querySelector('.limiter.bacground-template h2').innerHTML = resultJson.values.biblio;
+          document.querySelector('.gallery h2').innerHTML = resultJson.values.gallery;
+          document.querySelector('.video h2').innerHTML = resultJson.values.video;
+          document.querySelector('.map h2').innerHTML = resultJson.values.map;
         }
       });
   };
