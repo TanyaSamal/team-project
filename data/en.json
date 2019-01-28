@@ -23,6 +23,11 @@
     "p5": "Igor Baranov",
     "p5Work": "Writers List / Search",
     "search": "Search",
-    "placeholder": "Enter name, location or year"
+    "placeholder": "Enter name, location or year",
+    "bio": "Biography",
+    "biblio": "List of works",
+    "gallery": "Gallery",
+    "video": "Video",
+    "map": "Map"
   }
 }

@@ -1,5 +1,5 @@
 function generatePage(numberOfAuthor, language) {
-  fetch('../data/data.json')
+  fetch('https://raw.githubusercontent.com/mbulldozer/team-project/master/data/data.json')
     .then(response => response.json())
     .then((resultJson) => {
       generateInformation(resultJson, numberOfAuthor, language);
@@ -44,12 +44,26 @@ function generateInformation(resultJson, numberOfAuthor, language) {
   const authorTimelineInfo = document.querySelector('.main-timeline');
   let addInfo = '';
   resultJson[numberOfAuthor].bio.forEach((element) => {
+    let place = '';
+    let description = '';
+    if (localStorage.getItem('lang') !== null) {
+      const localLang = localStorage.getItem('lang');
+      switch (localLang) {
+        case 'Русский': place = element.placeRu; description = element.descriptionRu; break;
+        case 'Беларускi': place = element.placeBy; description = element.descriptionBy; break;
+        case 'English': place = element.placeEn; description = element.descriptionEn; break;
+        default: place = element.placeRu; description = element.descriptionRu; break;
+      }
+    } else {
+      place = element.placeRu;
+      description = element.descriptionRu;
+    }
     addInfo += `<div class="timeline">
     <div class="timeline-icon"></div>
       <div class="timeline-content">
         <span class="date">${element.year}</span>
-        <h5 class="title">${element.placeRu}</h5>
-        <p class="description">${element.descriptionRu}</p>
+        <h5 class="title">${place}</h5>
+        <p class="description">${description}</p>
     </div>
   </div>
   </div>`;
@@ -59,9 +73,21 @@ function generateInformation(resultJson, numberOfAuthor, language) {
   const authorWorksInfo = document.querySelector('.table');
   addInfo = authorWorksInfo.innerHTML;
   resultJson[numberOfAuthor].biblio.forEach((element) => {
+    let work = '';
+    if (localStorage.getItem('lang') !== null) {
+      const localLang = localStorage.getItem('lang');
+      switch (localLang) {
+        case 'Русский': work = element.workRu; break;
+        case 'Беларускi': work = element.workBy; break;
+        case 'English': work = element.workEn; break;
+        default: work = element.workRu; break;
+      }
+    } else {
+      work = element.workRu;
+    }
     addInfo += `
     <div class="row-table">
-      <div class="cell" data-title="Название">${element.workRu}</div>
+      <div class="cell" data-title="Название">${work}</div>
       <div class="cell" data-title="Год выпуска">${element.year}</div>
     </div>`;
   });

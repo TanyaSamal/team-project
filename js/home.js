@@ -1,4 +1,4 @@
-fetch('../data/data.json')
+fetch('https://raw.githubusercontent.com/mbulldozer/team-project/master/data/data.json')
   .then(response => response.json())
   .then((resultJson) => {
     const rand = Math.trunc(Math.random() * (resultJson.length));
