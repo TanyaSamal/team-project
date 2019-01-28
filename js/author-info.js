@@ -1,9 +1,9 @@
-function generatePage(numberOfAuthor, language){
+function generatePage(numberOfAuthor, language) {
   fetch('../data/data.json')
     .then(response => response.json())
     .then((resultJson) => {
       generateInformation(resultJson, numberOfAuthor, language);
-  });
+    });
 }
 
 window.onload = function() {
