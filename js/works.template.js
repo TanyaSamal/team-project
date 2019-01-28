@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const templateWorks = `
 <section class="limiter bacground-template">
   <h2>Список произведений</h2>

@@ -1,4 +1,5 @@
-const templateInfo =`
+/* eslint-disable no-unused-vars */
+const templateInfo = `
   <section id="author-info" class="bacground-template">
   <div class="container">   
     <div class="row align-items-center">
