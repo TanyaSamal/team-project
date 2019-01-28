@@ -1,5 +1,5 @@
 const ready = () => {
-  const printAuthor = (obj, lang, key1, action1) => {
+  const printAuthor = (obj, index, lang, key1, action1) => {
     const mainEl = document.querySelector('.daily-author');
 
     const res = document.createElement('div');
@@ -24,13 +24,16 @@ const ready = () => {
     }
 
     const link = document.createElement('a');
-    link.href = '/';
+    link.href = './author-info.html';
     switch (lang) {
       case 'ru': link.innerHTML = 'Читать далее...'; break;
       case 'by': link.innerHTML = 'Чытаць далей...'; break;
       case 'en': link.innerHTML = 'More...'; break;
       default: link.innerHTML = 'Читать далее...';
     }
+    link.onclick = () => {
+      localStorage.setItem('numberOfAuthor', index);
+    };
     wrapper.appendChild(link);
 
     res.appendChild(wrapper);
@@ -41,7 +44,7 @@ const ready = () => {
     fetch('../data/data.json')
       .then(response => response.json())
       .then((resultJson) => {
-        resultJson.forEach((o) => {
+        resultJson.forEach((o, index) => {
           let bio = '';
           switch (lang) {
             case 'ru': bio = o.bio[0].descriptionRu; break;
@@ -49,7 +52,7 @@ const ready = () => {
             case 'en': bio = o.bio[0].descriptionEn; break;
             default: bio = o.bio[0].descriptionRu;
           }
-          printAuthor(o, lang, o.bio[0].year, bio);
+          printAuthor(o, index, lang, o.bio[0].year, bio);
         });
       });
   };
@@ -65,14 +68,14 @@ const ready = () => {
         mainEl.innerHTML = '';
         let res = 0;
         if (keyWord !== '') {
-          resultJson.forEach((obj) => {
+          resultJson.forEach((obj, index) => {
             const name = obj.name[lang].toLowerCase();
             if (name.indexOf(keyWord) !== -1) {
-              printAuthor(obj, lang);
+              printAuthor(obj, index, lang);
               res += 1;
             }
             let description = '';
-            obj.bio.forEach((bioObj) => {
+            obj.bio.forEach((bioObj, ind) => {
               let place = '';
               switch (lang) {
                 case 'ru': place = bioObj.placeRu; break;
@@ -87,11 +90,11 @@ const ready = () => {
                   case 'en': description = bioObj.descriptionEn; break;
                   default: description = bioObj.descriptionRu; break;
                 }
-                printAuthor(obj, lang, keyWord, description);
+                printAuthor(obj, ind, lang, keyWord, description);
                 res += 1;
               }
             });
-            obj.biblio.forEach((biblioObj) => {
+            obj.biblio.forEach((biblioObj, ind) => {
               if (biblioObj.year === keyWord) {
                 switch (lang) {
                   case 'ru': description = biblioObj.workRu; break;
@@ -99,7 +102,7 @@ const ready = () => {
                   case 'en': description = biblioObj.workEn; break;
                   default: description = biblioObj.workRu; break;
                 }
-                printAuthor(obj, lang, keyWord, description);
+                printAuthor(obj, ind, lang, keyWord, description);
                 res += 1;
               }
             });

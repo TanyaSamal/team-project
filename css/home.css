@@ -79,15 +79,12 @@ footer {
 }
 
 .persons {
-  margin: 0 40px 20px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .person {
   text-align: center;
-  margin: 0 20px;
 }
 
 .person-pic {
@@ -122,7 +119,7 @@ footer {
 
 .daily-author img {
   margin-right: 40px;
-} 
+}
 
 .photo {
   height: 350px;
