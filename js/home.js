@@ -5,7 +5,7 @@ fetch('../data/data.json')
     const mainEl = document.querySelector('.daily-author');
 
     const res = document.createElement('div');
-    res.className = 'result';
+    res.className = 'row result ';
 
     const pic = document.createElement('img');
     pic.src = resultJson[rand].img;
@@ -13,7 +13,7 @@ fetch('../data/data.json')
     res.appendChild(pic);
 
     const content = document.createElement('div');
-    content.className = 'info';
+    content.className = 'col-md-6 info ';
 
     const name = document.createElement('h3');
     name.innerHTML = resultJson[rand].name.ru;
